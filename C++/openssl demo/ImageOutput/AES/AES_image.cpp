@@ -1,9 +1,9 @@
 #include <iostream>
-#include <fstream>
 #include <vector>
 #include <cstring>
 #include <openssl/aes.h>
 #include <openssl/rand.h>
+#include <fstream>
 
 // AES encryption in CBC mode
 void aes_encrypt_cbc(const char* inputFileName, const char* outputFileName, const unsigned char* key, const unsigned char* iv, int keySize) {
@@ -76,9 +76,9 @@ void aes_decrypt_cbc(const char* inputFileName, const char* outputFileName, cons
 }
 
 int main() {
-    const char* inputFileName = "input_image.jpg";
-    const char* encryptedFileName = "encrypted_image.jpg";
-    const char* decryptedFileName = "decrypted_image.jpg";
+    const char* inputFileName = "input_image.bmp";
+    const char* encryptedFileName = "encrypted_image.bmp";
+    const char* decryptedFileName = "decrypted_image.bmp";
 
     // Generate a random IV
     unsigned char iv[AES_BLOCK_SIZE];
