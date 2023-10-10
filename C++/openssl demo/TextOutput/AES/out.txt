@@ -1,0 +1,8 @@
+AES CBC Encrypted: R¥Àt$¬YHÅebú’ôJ=Ä™İ†…C%‰Åˆ
+¿†|Ö;0ÀÕ
+AES CBC Decrypted: ş(ˆdkÙÃæf;G×Ó3ES in CBC and ECB mode!
+AES ECB Encrypted: N—
+÷÷vöC6W(O5ES in CBC and ECB mode!
+AES ECB Decrypted: Hello, OpenSSL AES in CBC and ECB mode!
+Time taken by this encryption in CBC is 6.7e-05 seconds
+Time taken by this encryption in ECB is 0.0000020000 seconds
