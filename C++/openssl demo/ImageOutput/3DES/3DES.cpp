@@ -10,7 +10,7 @@ void des3_encrypt_cbc(const char* inputFileName, const char* outputFileName, con
     std::ifstream inputFile(inputFileName, std::ios::binary);
     std::ofstream outputFile(outputFileName, std::ios::binary);
 
-    DES_cblock desKey1, desKey2, desKey3;
+    DES_cblock desKey1, desKey2, desKey3;nnnn
     DES_key_schedule ks1, ks2, ks3;
 
     // Split the 24-byte key into three 8-byte DES keys
