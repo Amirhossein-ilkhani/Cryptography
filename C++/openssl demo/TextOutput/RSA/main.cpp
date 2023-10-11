@@ -9,7 +9,7 @@ int main() {
     ERR_load_crypto_strings();
 
     // Generate an RSA key pair
-    RSA* rsa_keypair = RSA_generate_key(2048, RSA_F4, nullptr, nullptr);
+    RSA* rsa_keypair = RSA_generate_key(2048, RSA_F4, nullptr, nullptr); //Generates Key pair
     if (!rsa_keypair) {
         std::cerr << "Failed to generate RSA key pair." << std::endl;
         return 1;
@@ -19,8 +19,8 @@ int main() {
     BIO* bio_pub = BIO_new(BIO_s_mem());
     BIO* bio_priv = BIO_new(BIO_s_mem());
 
-    PEM_write_bio_RSAPublicKey(bio_pub, rsa_keypair);
-    PEM_write_bio_RSAPrivateKey(bio_priv, rsa_keypair, nullptr, nullptr, 0, nullptr, nullptr);
+    PEM_write_bio_RSAPublicKey(bio_pub, rsa_keypair); //Assigns public key to bio
+    PEM_write_bio_RSAPrivateKey(bio_priv, rsa_keypair, nullptr, nullptr, 0, nullptr, nullptr); //Assigns private key to bio
 
     char* pub_key_data;
     char* priv_key_data;

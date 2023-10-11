@@ -26,7 +26,7 @@ $(TARGET): $(OBJS)
 	$(CC) $(CPPFLAGS) -o $@ -c $<
 .PHONY: run
 run: prog.out
-	./prog.out 
+	./prog.out > out.txt
 
 clean:
 	rm -rf $(TARGET)
